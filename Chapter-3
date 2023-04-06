@@ -1,0 +1,151 @@
+
+
+
+
+Control of flow
+
+
+
+In addition to operators, control flow statements are also essential in C++ programming. Control flow statements allow the programmer to control the order in which statements are executed based on certain conditions. Some of the commonly used control flow statements in C++ include:
+
+- if/else statements: used for conditional execution of statements based on a certain condition.
+
+- switch statements: used for executing different blocks of code based on the value of a variable.
+
+- loops (for, while, do-while): used for repeating a block of code until a certain condition is met.
+
+- break/continue statements: used for interrupting or skipping a loop based on certain conditions.
+
+- goto statement: used for jumping to a specific label in the code.
+
+Overall, control flow statements are important in C++ programming as they enable the programmer to create complex logic and execute it in a precise and efficient manner.
+
+
+
+
+Basic structure in programming language
+
+
+
+The basic structure of a programming language typically includes the following elements:
+
+1. Data types: These are used to define the type of data that can be used in a program, such as integers, floating point numbers, characters, etc.
+
+2. Variables: These are used to store values that can be used throughout the program.
+
+3. Operators: These are used to perform mathematical or logical operations on data.
+
+4. Control structures: These include if/else statements, loops, and other statements that allow the program to make decisions and repeat actions based on certain conditions.
+
+5. Functions: These are blocks of code that can be reused throughout a program to perform specific tasks.
+
+6. Input/output: This allows the program to receive input from the user and display output to the user.
+
+7. Comments: These are used to add notes to the code that explain what it does and how it works.
+
+Overall, these elements work together to create a structured and organized program that can perform complex tasks.
+
+
+
+
+Conditional or selection statements
+
+
+Conditional or selection statements in C++ allow the program to make decisions based on certain conditions. These statements use keywords such as if, else if, and else.
+
+The basic syntax for a conditional statement is:
+
+```
+if (condition) {
+  // code to be executed if condition is true
+}
+```
+
+The condition in the parentheses must evaluate to a boolean value (true or false). If the condition is true, the code inside the curly braces will be executed.
+
+An else if statement can be added to check for another condition if the first condition is not true:
+
+```
+if (condition1) {
+  // code to be executed if condition1 is true
+} else if (condition2) {
+  // code to be executed if condition2 is true
+}
+```
+
+If condition1 is not true, then the program will check condition2. If condition2 is true, then the code inside the second set of curly braces will be executed.
+
+Finally, an else statement can be added to provide a default action if none of the conditions are true:
+
+```
+if (condition1) {
+  // code to be executed if condition1 is true
+} else if (condition2) {
+  // code to be executed if condition2 is true
+} else {
+  // code to be executed if neither condition1 nor condition2 is true
+}
+```
+
+Conditional statements are useful for implementing decision-making logic in a program, such as determining whether a user input is valid or selecting different paths through a program based on user choices.
+
+
+
+The one-way if statement
+
+
+The one-way if statement is a basic conditional statement that only checks for one condition. It has the following syntax:
+
+```
+if (condition) {
+  // code to be executed if condition is true
+}
+```
+
+If the condition is true, then the code inside the curly braces will be executed. If the condition is false, then the code inside the curly braces will be skipped and the program will continue to the next line of code.
+
+The one-way if statement is useful for simple decision-making logic where there is only one possible outcome. However, for more complex situations where there are multiple conditions or actions to take, the if-else or if-else-if statements are more appropriate.
+
+
+
+
+Two-way if-else statement
+
+
+The two-way if-else statement is a conditional statement that checks for two possible outcomes. It has the following syntax:
+
+```
+if (condition) {
+  // code to be executed if condition is true
+} else {
+  // code to be executed if condition is false
+}
+```
+
+If the condition is true, then the code inside the first set of curly braces will be executed. If the condition is false, then the code inside the second set of curly braces will be executed.
+
+The two-way if-else statement is useful for decision-making logic where there are only two possible outcomes. It can also be used in combination with other if-else statements to create more complex decision-making logic.
+
+
+
+
+The multi-way if-else statement
+
+
+The multi-way if-else statement is a conditional statement that checks for multiple possible outcomes. It has the following syntax:
+
+```
+if (condition1) {
+  // code to be executed if condition1 is true
+} else if (condition2) {
+  // code to be executed if condition2 is true
+} else if (condition3) {
+  // code to be executed if condition3 is true
+} else {
+  // code to be executed if none of the conditions are true
+}
+```
+
+The multi-way if-else statement allows for multiple conditions to be checked, and the code block that corresponds to the first true condition will be executed. If none of the conditions are true, then the code block inside the final else statement will be executed.
+
+The multi-way if-else statement is useful for decision-making logic where there are multiple possible outcomes, and it can be used to create more complex decision-making logic by nesting multiple if-else statements inside each other.
