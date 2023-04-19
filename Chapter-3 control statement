@@ -149,3 +149,206 @@ if (condition1) {
 The multi-way if-else statement allows for multiple conditions to be checked, and the code block that corresponds to the first true condition will be executed. If none of the conditions are true, then the code block inside the final else statement will be executed.
 
 The multi-way if-else statement is useful for decision-making logic where there are multiple possible outcomes, and it can be used to create more complex decision-making logic by nesting multiple if-else statements inside each other.
+
+
+
+Suppose x=3 and y=2; show the output if any of the following code. What is the output if x=3 and y=4? What is the output if x=2 and y=2?
+Draw a flowchart of code.
+     if (x>2) {
+       if (y>2) {
+           int z=x+y;
+           cout<<"z is "<<z<<sndl;
+        }
+      }
+else
+         cout << "x is" << x << endl;
+
+
+If x=3 and y=2, the output will be "z is 5".
+If x=3 and y=4, the output will be "z is 7".
+If x=2 and y=2, there will be no output.
+Flowchart:
+Start -> Input x and y -> Check if x>2 -> Check if y>2 -> Calculate z=x+y -> Output "z is " + z -> End
+                                                    -> Output "x is " + x -> End
+
+
+Write a program to accept any character from keyboard and display whether it is vowel or not
+
+
+Here is a Python program to accept any character from the keyboard and display whether it is a vowel or not:
+
+ch = input("Enter a character: ")
+
+if ch in ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']:
+    print(ch, "is a vowel")
+else:
+    print(ch, "is not a vowel")
+
+
+Explanation:
+- We first accept a character from the user using the input() function and store it in the variable ch.
+- We then check if the character is present in the list of vowels (both lowercase and uppercase) using the in operator.
+- If the character is a vowel, we print a message saying so. Otherwise, we print a message saying that it is not a vowel.
+
+
+Write aprogram that gives grade based on the following scale using if else statment
+
+
+Here's an example program that gives a grade based on a scale:
+
+score = int(input("Enter your score: "))
+
+if score >= 90:
+    print("Your grade is A")
+elif score >= 80:
+    print("Your grade is B")
+elif score >= 70:
+    print("Your grade is C")
+elif score >= 60:
+    print("Your grade is D")
+else:
+    print("Your grade is F")
+
+
+In this program, we first accept the score from the user using the input() function and convert it to an integer using the int() function. We then store it in the variable score.
+
+We then use a series of if and elif statements to check the score against different thresholds and assign the corresponding grade. The conditions are ordered from highest to lowest, so if a condition is true, we know that the previous ones were false.
+
+If none of the conditions are true (i.e., the score is less than 60), we assign a grade of F.
+
+
+
+Write a program that display greatest of three numbers using if statement accept input from user
+
+
+Here's an example program that accepts three numbers from the user and displays the greatest one using if statements:
+
+num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))
+num3 = int(input("Enter third number: "))
+
+if num1 >= num2 and num1 >= num3:
+    print("The greatest number is", num1)
+elif num2 >= num1 and num2 >= num3:
+    print("The greatest number is", num2)
+else:
+    print("The greatest number is", num3)
+
+
+In this program, we first accept three numbers from the user using the input() function and convert them to integers using the int() function. We then store them in the variables num1, num2, and num3.
+
+We then use a series of if and elif statements to compare the numbers and determine which one is the greatest. The conditions check if num1 is greater than or equal to both num2 and num3, if num2 is greater than or equal to both num1 and num3, and if neither of those conditions are true (i.e., num3 must be the greatest).
+
+Finally, we use the print() function to display the result to the user.
+
+
+Write a program that accepts three numbers from the user and prints increasing if the numbers are in increasing order , decreasing if the numbers are in decreasing order   and neither increasing nor decreasing order otherwise.
+
+
+num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))
+num3 = int(input("Enter third number: "))
+
+if num1 < num2 < num3:
+    print("Increasing")
+elif num1 > num2 > num3:
+    print("Decreasing")
+else:
+    print("Neither increasing nor decreasing")
+
+
+Write a program to calculate sum, average and check you grade status , if pass or fail.
+Hint;accept at least thee course marks then calculate the total and average of your mark the status will be based on average value. Display the total mark average and status
+
+
+mark1 = int(input("Enter marks for first course: "))
+mark2 = int(input("Enter marks for second course: "))
+mark3 = int(input("Enter marks for third course: "))
+
+total = mark1 + mark2 + mark3
+average = total / 3
+
+print("Total marks:", total)
+print("Average marks:", average)
+
+if average >= 40:
+    print("Pass")
+else:
+    print("Fail")
+
+
+Write a program that calculates sum of numbers from 1 to 100.
+
+
+sum = 0
+for i in range(1, 101):
+    sum += i
+
+print("Sum of numbers from 1 to 100:", sum)
+
+
+Write a program that displays numbers between 0-100 that are divisible by 2,3, and 5. The numbers displayed should be those that can be divided by 2,3, and 5 without remainder.
+
+
+for i in range(0, 101):
+    if i % 2 == 0 and i % 3 == 0 and i % 5 == 0:
+        print(i)
+
+
+Write a program that calculates factorial using for loop, while loop and do while loops. The program should accept the number and then perform the calculation of the factorial.
+
+
+# Using for loop
+
+num = int(input("Enter a number: "))
+factorial = 1
+
+for i in range(1, num+1):
+    factorial *= i
+
+print("Factorial of", num, "is", factorial)
+
+
+# Using while loop
+
+num = int(input("Enter a number: "))
+factorial = 1
+i = 1
+
+while i <= num:
+    factorial *= i
+    i += 1
+
+print("Factorial of", num, "is", factorial)
+
+
+# Using do while loop (using a while loop with a break statement)
+
+num = int(input("Enter a number: "))
+factorial = 1
+i = 1
+
+while True:
+    factorial *= i
+    i += 1
+    if i > num:
+        break
+
+print("Factorial of", num, "is", factorial)
+
+
+Write a while loop that prints the average of numbers from 1 to 10.
+
+# Using while loop to find average of numbers from 1 to 10
+
+sum = 0
+count = 1
+
+while count <= 10:
+    sum += count
+    count += 1
+
+average = sum / 10
+print("Average of numbers from 1 to 10 is", average)
+
+
